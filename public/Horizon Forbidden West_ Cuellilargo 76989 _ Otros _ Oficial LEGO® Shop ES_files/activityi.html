@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0810)https://8342968.fls.doubleclick.net/activityi;dc_pre=CP3fm8mQgfsCFYyHmgod3twADw;src=8342968;type=pagev0;cat=weste000;ord=1304439778716;gtm=2odaq0;auiddc=290462058.1666898436;u14=https%3A%2F%2Fwww.lego.com%2Fes-es%2Fproduct%2Fhorizon-forbidden-west-tallneck-76989%3Fcmp%3DKAC-INI-GOOGEU-GO-ES-ES-SP-BUY-SHOP-PLA-BP-SP-RN-Shopping%26ef_id%3DCjwKCAjw2OiaBhBSEiwAh2ZSP5ilOwe7hmdyMAfRrDMj3bKgFKeVwQLnTPj-emKmEUPL-gGjOgKDexoCIQsQAvD_BwE%3AG%3As%26s_kwcid%3DAL!933!3!288209001767!!!g!306176805090!;~oref=https%3A%2F%2Fwww.lego.com%2Fes-es%2Fproduct%2Fhorizon-forbidden-west-tallneck-76989%3Fcmp%3DKAC-INI-GOOGEU-GO-ES-ES-SP-BUY-SHOP-PLA-BP-SP-RN-Shopping%26ef_id%3DCjwKCAjw2OiaBhBSEiwAh2ZSP5ilOwe7hmdyMAfRrDMj3bKgFKeVwQLnTPj-emKmEUPL-gGjOgKDexoCIQsQAvD_BwE%3AG%3As%26s_kwcid%3DAL!933!3!288209001767!!!g!306176805090!? -->
+<html><script type="text/javascript">
+    var spector;
+    var captureOnLoad = false;
+    var captureOffScreen = false;
+    window.__SPECTOR_Canvases = [];
+
+    (function() {
+        var __SPECTOR_Origin_EXTENSION_GetContext = HTMLCanvasElement.prototype.getContext;
+        HTMLCanvasElement.prototype.__SPECTOR_Origin_EXTENSION_GetContext = __SPECTOR_Origin_EXTENSION_GetContext;
+
+        if (typeof OffscreenCanvas !== 'undefined') {
+            var __SPECTOR_Origin_EXTENSION_OffscreenGetContext = OffscreenCanvas.prototype.getContext;
+            OffscreenCanvas.prototype.__SPECTOR_Origin_EXTENSION_OffscreenGetContext = __SPECTOR_Origin_EXTENSION_OffscreenGetContext;
+
+            OffscreenCanvas.prototype.getContext = function () {
+                var context = null;
+                if (!arguments.length) {
+                    return context;
+                }
+    
+                if (arguments.length === 1) {
+                    context = this.__SPECTOR_Origin_EXTENSION_OffscreenGetContext(arguments[0]);
+                    if (context === null) {
+                        return context;
+                    }
+                }
+                else if (arguments.length === 2) {
+                    context = this.__SPECTOR_Origin_EXTENSION_OffscreenGetContext(arguments[0], arguments[1]);
+                    if (context === null) {
+                        return context;
+                    }
+                }
+    
+                var contextNames = ["webgl", "experimental-webgl", "webgl2", "experimental-webgl2"];
+                if (contextNames.indexOf(arguments[0]) !== -1) {
+                    // context.canvas.setAttribute("__spector_context_type", arguments[0]);
+                    // Notify the page a canvas is available.
+                    var myEvent = new CustomEvent("SpectorWebGLCanvasAvailableEvent");
+                    document.dispatchEvent(myEvent);
+                    this.id = "Offscreen";
+                    window.__SPECTOR_Canvases.push(this);
+    
+                    if (captureOnLoad) {
+                        // Ensures canvas is in the dom to capture the one we are currently tracking.
+                        if (false) {
+                            spector.captureContext(context, 500, false, false);
+                            captureOnLoad = false;
+                        }
+                    }
+                }
+    
+                return context;
+            }
+        }
+
+        HTMLCanvasElement.prototype.getContext = function () {
+            var context = null;
+            if (!arguments.length) {
+                return context;
+            }
+
+            if (arguments.length === 1) {
+                context = this.__SPECTOR_Origin_EXTENSION_GetContext(arguments[0]);
+                if (context === null) {
+                    return context;
+                }
+            }
+            else if (arguments.length === 2) {
+                context = this.__SPECTOR_Origin_EXTENSION_GetContext(arguments[0], arguments[1]);
+                if (context === null) {
+                    return context;
+                }
+            }
+
+            var contextNames = ["webgl", "experimental-webgl", "webgl2", "experimental-webgl2"];
+            if (contextNames.indexOf(arguments[0]) !== -1) {
+                context.canvas.setAttribute("__spector_context_type", arguments[0]);
+                // Notify the page a canvas is available.
+                var myEvent = new CustomEvent("SpectorWebGLCanvasAvailableEvent");
+                document.dispatchEvent(myEvent);
+
+                if (captureOffScreen) {
+                    var found = false;
+                    for (var i = 0; i < window.__SPECTOR_Canvases.length; i++) {
+                        if (window.__SPECTOR_Canvases[i] === this) {
+                            found = true;
+                            break;
+                        }
+                    }
+                    if (!found) {
+                        window.__SPECTOR_Canvases.push(this);
+                    }
+                }
+
+                if (captureOnLoad) {
+                    // Ensures canvas is in the dom to capture the one we are currently tracking.
+                    if (this.parentElement || false) {
+                        spector.captureContext(context, 500, false, false);
+                        captureOnLoad = false;
+                    }
+                }
+            }
+
+            return context;
+        }
+    })()</script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title></title></head><body style="background-color: transparent" data-new-gr-c-s-check-loaded="14.1085.0" data-gr-ext-installed=""><img src="./dc_pre=CP3fm8mQgfsCFYyHmgod3twADw"></body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
